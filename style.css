@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -----------header---------- */
+
+#header{
+    height: 100vh;
+    background-image: url(imgs/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    margin: 30px 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #636e72;
+}
+
+.logo .logo-font{
+    font-size: 50px;
+    color: #fd79a8;
+}
+
+.header-text{
+    max-width: 450px;
+    margin-top: 150px;
+}
+
+.header-text h1{
+    font-size: 35px;
+}
+.square-box{
+    margin: 20px 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fd79a8;
+    display: inline-block;
+}
+
+.common-btn{
+    background-color: transparent;
+    padding: 15px 40px;
+    border: 2px solid #f67c92;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header-text button{
+    margin: 15px 0;
+}
+
+.line1{
+    width: 40px;
+    height: 7px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+
+.line2{
+    width: 55px;
+    height: 7px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+
+.line3{
+    width: 70px;
+    height: 7px;
+    background-color: #f67c92;
+    display: inline-block;
+}
+
+/* ---------nav------ */
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #663c44;
+    z-index: 1;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 50px 20px;
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* ----------about-------- */
+
+#about,#offer{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-left-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 100%;
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+
+.about-text h2{
+    margin: 15px 0;
+}
+
+.about-text h3{
+    color: #f67c92;
+}
+
+/* ------------features---------- */
+
+#features{
+    padding: 50px 0;
+}
+
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.feature-col img{
+    width: 100px;
+}
+
+.feature-col h4{
+    margin-bottom: 20px;
+}
+
+.feature-btn{
+    display: flex;
+    margin: 50px auto;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+/* ----------courses----------- */
+
+#courses{
+    padding: 100px 0;
+}
+
+.courses-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-right-col{
+    flex-basis: 50%;
+}
+
+.course-right-col img{
+    width: 100%;
+}
+
+.course-left-col{
+    flex-basis: 50%;
+}
+
+.courses-text{
+    max-width: 400px;
+}
+
+.courses-text .common-btn{
+    margin: 30px 0;
+}
+
+/* ------------offer--------- */
+
+
+#offer .common-btn{
+    margin: 20px 0;
+}
+
+
+/* ------------contact------------- */
+
+
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left-col,.contact-right-col{
+    flex-basis: 50%;
+}
+
+
+.contact-right-col img{
+    width: 100%;
+}
+
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input{
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 3px solid #f67c92;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button{
+    flex-basis: 48%;
+}
+
+/* -----------------footer------------- */
+
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #f67c92;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col{
+    flex-basis: 35%;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: #f67c92;
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    font-size: 12px;
+    color: rgb(141, 129, 113);
+}
+
+.footer-logo .logo{
+    margin: 0 10px;
+}
+.footer-right-col{
+    margin-top: 60px;
+}
+
+.footer-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ----------responsive---------- */
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        padding: 0 20px;
+    }
+    .courses-row{
+        padding: 0 20px;
+    }
+    .contact-row{
+        padding: 0 20px;
+    }
+    .footer-row{
+        padding: 0 20px;
+    }
+
+    #about,#offer{
+        padding: 0 20px;
+    }
+    .about-left-col{
+        flex-basis: 100%;
+    }
+    .about-right-col{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .contact-row{
+        margin-top: 50px;
+    }
+    .contact-left-col,.contact-right-col{
+        flex-basis: 100%;
+    }
+    .footer-left-col{
+        flex-basis: 100%;
+    }
+
+    .footer-right-col{
+        flex-basis: 100%;
+    }
+    .footer-info{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
